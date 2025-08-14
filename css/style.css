@@ -367,7 +367,7 @@ html, body{ height: 100%; }
 
 /* Estilos para el menú hamburguesa */
 .navbar-toggle .icon-bar {
-    background-color: #000000 !important;
+    background-color: #ffffff !important;
 }
 
 .navbar-toggle {
@@ -437,12 +437,12 @@ html, body{ height: 100%; }
     display: inline-block;
 	font-size: 74px;
     line-height: 100px;
-	color:#ffeeee;
+	color:#fffbfb;
 	padding-bottom: 0px;
 	padding-top:100px;
 	font-weight: 700;
 	-webkit-text-stroke: 2px #ffffff;
-	text-stroke: 2px #050404;
+	text-stroke: 2px #000000;
 }
 
 .banner-text h2 {
@@ -467,6 +467,8 @@ html, body{ height: 100%; }
 .typer {
 	color: #D4AF37 !important;
 	font-weight: 700;
+	-webkit-text-stroke: 0px;
+	text-stroke: 0px;
 }
 
 /* Forzar color dorado para el texto animado */
@@ -481,7 +483,7 @@ span.typer {
 
 /* Forzar color dorado para el elemento específico */
 #some-id {
-	color: #D4AF37 !important;
+	color: #ebd290 !important;
 }
 
 .book-btn a{
