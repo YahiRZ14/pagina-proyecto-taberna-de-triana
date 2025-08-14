@@ -69,6 +69,7 @@ body{
 	font-size:14px;
 	font-family: 'Crimson Text', 'Georgia', serif;
 	line-height:1.80857;
+	background: #F5F5DC;
 }
 
 a {
@@ -264,6 +265,10 @@ html, body{ height: 100%; }
 #header{}
 .logo{
 	float:left;
+	max-width: 10px;
+	position: relative;
+	top: -25px;
+	left: -40px;
 }
 .header-block-top{
 	position: absolute;
@@ -295,12 +300,12 @@ html, body{ height: 100%; }
 	height:inherit;
 }
 .main-menu .navbar-default .navbar-nav li a{
-	color:#fff;
+	color:#ebd290;
 }
 .main-menu nav li a{
 	padding: 43px 0px 15px;
 	margin: 0 14px;
-	color: #1a1a1a;
+	color: #ebd290;
 	font-family: 'Cinzel', 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -344,6 +349,10 @@ html, body{ height: 100%; }
     transform: scale3d(1, 1, 1);
 }
 
+.main-menu nav li.active a {
+    color: #caa890 !important;
+}
+
 .main-menu nav li a:hover::before, .main-menu nav li a:focus::before {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -353,7 +362,7 @@ html, body{ height: 100%; }
 
 .main-menu .navbar-default .navbar-nav .active a{
 	background-color:transparent;
-	color: black;
+	color: #d1b7a5 !important;
 }
 
 .fixed-menu {
@@ -460,8 +469,8 @@ span.typer {
 }
 
 .book-btn a{
-	background:#D4AF37;
-	color:#1a1a1a;
+	background:#e4cb79;
+	color:#ffffff;
 	min-width: 219px;
     padding: 10.5px 20px;
     display: inline-block;
@@ -477,7 +486,7 @@ span.typer {
 .book-btn a:hover{
 	border:2px solid #1a1a1a;
 	background:#1a1a1a;
-	color:#D4AF37;
+	color:#cec5a6;
 }
 .hvr-underline-from-center {
     display: inline-block;
@@ -585,7 +594,7 @@ span.typer {
 -------------------------------------------------------------------*/
 
 .about-main{
-	background:#E6E6E6;
+	background:#F5F5DC;
 }
 .pad-top-100{
     padding-top: 90px;
