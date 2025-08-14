@@ -428,7 +428,7 @@ html, body{ height: 100%; }
 .banner-cell {
     display: table-cell;
     vertical-align: middle;
-    color: #fff;
+    color: #000000;
 }
 .banner-text h1 {
 	font-family: 'Cinzel', 'Playfair Display', serif;
@@ -437,10 +437,12 @@ html, body{ height: 100%; }
     display: inline-block;
 	font-size: 74px;
     line-height: 100px;
-	color:#ffffff;
+	color:#ffeeee;
 	padding-bottom: 0px;
 	padding-top:100px;
 	font-weight: 700;
+	-webkit-text-stroke: 2px #ffffff;
+	text-stroke: 2px #050404;
 }
 
 .banner-text h2 {
