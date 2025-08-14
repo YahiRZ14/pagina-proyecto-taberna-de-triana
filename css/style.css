@@ -498,7 +498,7 @@ span.typer {
 	font-size:18px;
 	font-family: 'Cinzel', 'Playfair Display', serif;
 	letter-spacing: 1px;
-	border: 2px solid #f8e6ac;
+	border: 2px solid #f8e6ac !important;
 	transition: all 0.3s ease;
 }
 .book-btn a:hover{
