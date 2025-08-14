@@ -365,6 +365,20 @@ html, body{ height: 100%; }
 	color: #d1b7a5 !important;
 }
 
+/* Estilos para el menú hamburguesa */
+.navbar-toggle .icon-bar {
+    background-color: #000000 !important;
+}
+
+.navbar-toggle {
+    border-color: #000000 !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: transparent !important;
+}
+
 .fixed-menu {
     position: fixed;
     width: 100%;
