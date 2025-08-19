@@ -72,11 +72,17 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#banner">Inicio</a></li>
                                     <li><a href="#about">Nosotros</a></li>
-                                     <li><a href="#galeria">Galería</a></li>
+                                    <li class="dropdown">
+                                        <a href="#galeria" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galería <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#galeria">Galería Completa</a></li>
+                                            <li><a href="#jardin-eventos">Jardín de Eventos</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#menu">Menú</a></li>
                                    
                                     <li><a href="#reservation">Reservación</a></li>
-                                    <li><a href="#footer">Contáctanos</a></li>
+                            
                                 </ul>
                             </div>
                             <!-- end nav-collapse -->
@@ -248,9 +254,9 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <h2 class="block-title text-center" style="color:#111;">
-                        Menu   
-                    </h2>
+                        <h2 class="block-title text-center">
+						Our Menu 	
+					</h2>
                         <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                     </div>
                     
@@ -431,10 +437,35 @@
     </div>
     <!-- end menu -->
 
-   
+   <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/521XXXXXXXXXX" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+        alt="WhatsApp" 
+        class="whatsapp-icon">
+</a>
 
-    
+<!-- Botón flotante -->
+<div id="chatbot-btn">
+    <img src="images/chatbot.png" alt="Chatbot" style="width:32px;height:32px;" />
+</div>
 
+<!-- Ventana del chatbot -->
+<div id="chatbot-window">
+  <div class="chat-header">
+    Asistente Virtual 🤖
+    <span id="close-chat">✖</span>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="bot-message">¡Hola! Soy tu asistente virtual. Pregúntame lo que quieras.</div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+    <button id="send-btn">Enviar</button>
+  </div>
+</div>
     
 
     <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
@@ -443,9 +474,9 @@
                 <div class="form-reservations-box">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <h2 class="block-title text-center" style="color:#111;">
-                        RESERVACIONES
-                    </h2>
+                            <h2 class="block-title text-center">
+						RESERVACIONES
+					</h2>
                         </div>
                         <h4 class="form-title">LLENA EL FORMULARIO</h4>
                         <p>POR FAVOR RELLENA EL FORMULARIO, SEGUN TUS NECESIDADES , GRACIAS!</p>
@@ -634,13 +665,23 @@
     </div>
     <!-- end footer-main -->
 
-    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
 
     
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
     <script src="js/bootstrap.min.js"></script>
+        <script>
+            // Habilitar dropdown en Bootstrap navbar
+            $(document).ready(function(){
+                $('.navbar .dropdown').hover(function() {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+                }, function() {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+                });
+            });
+        </script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 </body>

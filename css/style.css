@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
     File Name: style.css
     Template Name: Landigoo
@@ -632,8 +633,9 @@ span.typer {
 	font-size:51px;
 	font-family: 'Cinzel', 'Playfair Display', serif;
 	font-weight: 700;
-	color: #ffffff !important;
+	color: #f1ecec !important;
 	letter-spacing: 2px;
+    
 }
 
 .about-images {
@@ -941,135 +943,40 @@ span.typer {
 }
 
 
-
-/*------------------------------------------------------------------
-    BLOG AREA
--------------------------------------------------------------------*/
-
-.blog-main{
-	background:url(../images/blog_bg.jpg) no-repeat center;
-	background-attachment:fixed;
-	background-size:cover;
-	position:relative;
+.menu-main .block-title,
+.reservations-main .block-title {
+    color: #111 !important;
+    -webkit-text-stroke: 2px #111;
 }
-
-.blog-main::before {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.blog-main h2{
-	color:#ffffff;
-}
-
-.blog-box{
-	padding-top:20px;
-}
-
-.blog-block{
-	background:#FFF;
-	overflow: auto;
-	margin-bottom: 20px;
-}
-
-.blog-img-box{
-	float:left;
-	width:50%;
-	position: relative;
-}
-
-.blog-img-box .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e4bb7f;
     color: #fff;
-    opacity: 0;
-	transition: .3s all;
-	text-align:center;
-}
-
-.blog-img-box:hover img{
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
-}
-.blog-img-box:hover .overlay {
-    opacity: 1;
-}
-
-.blog-img-box img{
-	width:100%;
-}
-
-.overlay i{
-	margin-top: 42%;
-	border: 1px solid #fff;
-	padding: 15px;
-	border-radius: 50%;
-	color:#ffffff;
-	font-size:18px;
-}
-
-
-.blog-dit {
-    width: 50%;
-    height: 100%;
-    float: right;
+    border-radius: 50%;
     text-align: center;
-    padding: 65px 2% 0 2%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blog-dit p{
-	font-size: 12px;
-	color: #ccc;
-}
-.blog-dit h2{
-	font-size: 22px;
-    line-height: 20px;
-    color: #000;
-	font-weight:500;
-    margin-bottom: 20px;
-    padding: 10px 30px 13px 30px;
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
+/* Efecto hover */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.4);
 }
 
-.blog-dit h5{
-	font-size: 11px;
-	color: #ccc;
-}
-
-.blog-btn-v{
-	clear:both;
-	padding-top:30px;
-	text-align:center;
-}
-
-.blog-btn-v a {
-    color: #fff;
-    min-width: 219px;
-    padding: 10.5px 20px;
-    display: inline-block;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-.blog-btn-v a:hover {
-    background: none;
-}
-
-
-/*------------------------------------------------------------------
+/* Icono dentro */
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+}------------------------------------------------------------
     PRICING AREA
 -------------------------------------------------------------------*/
 
@@ -1579,7 +1486,95 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 	font-size:14px;
 	padding-bottom:0px;
 }
+
 /*------------------------------------------------------------------
     COLOR SWITCHER AREA
 -------------------------------------------------------------------*/
 
+/* Botón flotante */
+#chatbot-btn {
+    position: fixed;
+    bottom: 80px;
+  right: 20px;
+  background: #fcc96b;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* Ventana del chatbot */
+#chatbot-window {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Encabezado */
+.chat-header {
+  background: #25d366;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cuerpo */
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Mensajes */
+.bot-message {
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.user-message {
+  background: #25d366;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/* Footer */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+#user-input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+}
+#send-btn {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
