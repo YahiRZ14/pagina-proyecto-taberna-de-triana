@@ -409,7 +409,7 @@ html, body{ height: 100%; }
 -------------------------------------------------------------------*/
 
 .banner{
-	background:url(../images/fondo_inicio_triana.jpg) no-repeat center top;
+	background:url(../images/fondo_triana_.jpg) no-repeat center top;
 	background-attachment:fixed;
 	background-size:cover;
 	height:100vh;
@@ -1101,125 +1101,165 @@ span.typer {
 -------------------------------------------------------------------*/
 
 .reservations-main{
-	
+    background: #D2B48C !important;
+    position: relative;
 }
 
 .form-reservations-box{
-	width:70%;
-	margin:0 auto;
+    width: 80%;
+    margin: 0 auto;
+   
+    padding: 40px;
+   
+  
+   
 }
 
 .reservations-main h4{
-	text-align:center;
-	font-weight: 500;
-	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
     padding-top: 25px;
+   
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .reservations-main p{
-	text-align:center;
-	font-family: 'Roboto', sans-serif;
-	font-size:16px;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
 }
 
 .reservations-box{
-	padding-top:30px;
+    padding-top: 30px;
+    background: url('../images/pattern-talavera.png') center/contain repeat;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .form-box{
-	margin-bottom:20px;
-	min-height: 53px;
+    margin-bottom: 25px;
+    min-height: 53px;
 }
 
 .form-box input{
-	width:100%;
-	border:2px dotted #ccc;
-	background:#f5f5f5;
-	color:#202020;
-	padding:12px;
-	text-transform:capitalize;
-	border-radius: 4px;
-	opacity: 1;
-	min-height:54px;
+    width: 100%;
+    border: 2px solid #141105;
+    background: rgba(255, 235, 171, 0.9);
+    color: #000000;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    opacity: 1;
+    min-height: 54px;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .form-box select{
-	width:100%;
-	border:2px dotted #ccc;
-	background:#f5f5f5;
-	color:#202020;
-	padding: 12px;
-	text-transform:capitalize;
-	border-radius: 4px;
-	-webkit-appearance: none;
+    width: 100%;
+    border: 2px solid #000000;
+    background: rgba(0, 0, 0, 0.9);
+    color: #000000;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    background-image: url('../images/dropdown-arrow.png');
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .form-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
-	width:100%;
+    width: 100%;
 }
+
 .form-box .bootstrap-select button{
-	width:100%;
-	border:2px dotted #ccc;
-	background:#f5f5f5;
-	color:#202020 !important;
-	padding: 15px;
-	text-transform:capitalize;
-	border-radius: 4px;
-	-webkit-appearance: none;
+    width: 100%;
+    border: 2px solid #000000;
+    background: rgba(233, 190, 126, 0.9);
+    color: #000000 !important;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
+    transition: all 0.3s ease;
 }
 
 .form-box select option{
-	-webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding: 5px;
+    padding: 10px;
+    background: #000000;
+    color: #543621;
 }
 
-::-webkit-input-placeholder { /* Chrome */
-  color:#202020;
+::-webkit-input-placeholder {
+    color: #8B4513;
+    opacity: 0.7;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color:#202020;
+:-ms-input-placeholder {
+    color: #8B4513;
+    opacity: 0.7;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color:#202020;
-  opacity: 1;
+::-moz-placeholder {
+    color: #8B4513;
+    opacity: 0.7;
 }
-:-moz-placeholder { /* Firefox 4 - 18 */
-  color:#202020;
-  opacity: 1;
+:-moz-placeholder {
+    color: #8B4513;
+    opacity: 0.7;
 }
 
 .reserve-book-btn{
-	padding-top:30px;	
+    padding-top: 40px;
+    text-align: center;
 }
 
-.reserve-book-btn button a{
-	color: #fff;
+.reserve-book-btn button {
+    background: #000000 !important;
+    color: #fff;
+    min-width: 250px;
+    padding: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    border: 2px solid #fffefd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
 .reserve-book-btn button:hover {
-    background: none;
-    color: #202020;
-}
-
-.reserve-book-btn button  {
-    color: #fff;
-    min-width: 219px;
-    padding: 10.5px 20px;
-    display: inline-block;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 18px;
+    background: transparent;
+    color: #d8bc69;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 244, 244, 0.25);
 }
 
 .reserve-book-btn button:hover a{
@@ -1262,7 +1302,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
     margin-bottom: 22px;
     font-family: 'Cinzel', 'Playfair Display', serif;
 	font-size: 52px;
-	color: #D4AF37;
+	color: #e7dfc6 !important;
 	font-weight: 700;
 }
 
@@ -1270,7 +1310,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
     margin-bottom: 40px;
     font-size: 16px;
 	font-family: 'Crimson Text', 'Georgia', serif;
-	color:#ffffff;
+	color:#ffffff !important;
 	text-align:center;
 	letter-spacing: 0.5px;
 }
@@ -1382,7 +1422,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 .footer-box-a p{
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
-	color:#ffffff;
+	color:#fff9f9 !important;
 	line-height: 25px;
 }
 
@@ -1577,4 +1617,255 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+/*------------------------------------------------------------------
+    FOOTER ENHANCEMENTS
+-------------------------------------------------------------------*/
+
+/* Mejoras para el footer principal */
+.footer-box {
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    border-top: 3px solid #d8bc69;
+    position: relative;
+}
+
+.footer-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/footer_background.jpg') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.footer-in-main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mejoras para los títulos del footer */
+.footer-box-a h3,
+.footer-box-b h3,
+.footer-box-c h3,
+.footer-box-d h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.footer-box-a h3::after,
+.footer-box-b h3::after,
+.footer-box-c h3::after,
+.footer-box-d h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #1a1a1a, #333333);
+}
+
+/* Mejoras para el texto del footer */
+.footer-box-a p,
+.footer-box-c p {
+    font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #e0dfdc !important;
+    margin-bottom: 15px;
+}
+
+/* Mejoras para los enlaces del footer */
+.footer-box-b ul li a {
+    font-family: 'Crimson Text', serif;
+    color: #e7dfc6;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer-box-b ul li a:hover {
+    color: #d8bc69;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+.footer-box-b ul li a::before {
+    content: '→';
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #d8bc69;
+}
+
+.footer-box-b ul li a:hover::before {
+    opacity: 1;
+    left: -10px;
+}
+
+/* Mejoras para los iconos de contacto */
+.footer-box-c p i {
+    color: #d8bc69;
+    font-size: 18px;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-box-c p a {
+    color: #e7dfc6;
+    transition: all 0.3s ease;
+}
+
+.footer-box-c p a:hover {
+    color: #d8bc69;
+    text-decoration: none;
+}
+
+/* Mejoras para los horarios */
+.footer-box-d ul li p {
+    font-family: 'Crimson Text', serif;
+    color: #d8bc69;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-box-d ul li span {
+    font-family: 'Crimson Text', serif;
+    color: #e7dfc6;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Mejoras para los iconos sociales */
+.social-circle-border {
+    background: rgba(216, 188, 105, 0.1) !important;
+    border: 2px solid #d8bc69;
+    color: #d8bc69 !important;
+    transition: all 0.3s ease;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 31px !important;
+    font-size: 16px !important;
+}
+
+.social-circle-border:hover {
+    background: #d8bc69 !important;
+    color: #1a1a1a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(216, 188, 105, 0.3);
+}
+
+/* Mejoras para el copyright */
+.copyright-main {
+    background: #000000 !important;
+    border-top: 2px solid #d8bc69;
+    padding: 20px 0;
+}
+
+.copyright-main .copy-title {
+    font-family: 'Crimson Text', serif;
+    color: #e7dfc6;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.copyright-main .copy-title a {
+    color: #d8bc69;
+    transition: all 0.3s ease;
+}
+
+.copyright-main .copy-title a:hover {
+    color: #e7dfc6;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .footer-box-a h3,
+    .footer-box-b h3,
+    .footer-box-c h3,
+    .footer-box-d h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .footer-box-a h3::after,
+    .footer-box-b h3::after,
+    .footer-box-c h3::after,
+    .footer-box-d h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-socials {
+        text-align: center !important;
+    }
+}
+
+/* FORZAR COLOR BLANCO EN TÍTULOS DEL FOOTER */
+.footer-box .footer-box-a h3,
+.footer-box .footer-box-b h3,
+.footer-box .footer-box-c h3,
+.footer-box .footer-box-d h3 {
+    color: #ffffff !important;
+}
+
+/* Sobrescribir cualquier estilo anterior */
+.footer-box-a h3,
+.footer-box-b h3,
+.footer-box-c h3,
+.footer-box-d h3 {
+    color: #ffffff !important;
+}
+
+/* Estilos específicos para cada sección del footer */
+.footer-in-main .footer-box-a h3,
+.footer-in-main .footer-box-b h3,
+.footer-in-main .footer-box-c h3,
+.footer-in-main .footer-box-d h3 {
+    color: #ffffff !important;
+}
+
+/* FORZAR FONDO NEGRO EN COPYRIGHT */
+.copyright-main {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Sobrescribir cualquier gradiente anterior */
+.copyright-main {
+    background-image: none !important;
+    background: #000000 !important;
+}
+
+/* FORZAR FONDO CAFÉ CLARO EN RESERVACIONES */
+.reservations-main {
+    background: #D2B48C !important;
+    background-color: #D2B48C !important;
+    background-image: none !important;
+}
+
+/* Eliminar cualquier imagen de fondo anterior */
+.reservations-main {
+    background-image: none !important;
+    background-attachment: initial !important;
+    background-size: initial !important;
+    background-repeat: initial !important;
+    background-position: initial !important;
 }
